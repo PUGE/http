@@ -1,6 +1,6 @@
 {
   "name": "sharing",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "快速文件服务器",
   "scripts": {
     "precommit": "lint-staged",
