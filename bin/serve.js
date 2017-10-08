@@ -78,9 +78,7 @@ detect(port).then(open => {
   const listenArgs = [
     server,
     current,
-    inUse,
-    flags.clipless !== true,
-    flags.open
+    inUse
   ]
 
   server.listen(port, listening.bind(this, ...listenArgs))
