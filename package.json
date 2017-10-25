@@ -1,6 +1,6 @@
 {
   "name": "sharing",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "快速文件服务器",
   "scripts": {
     "precommit": "lint-staged",
@@ -50,9 +50,9 @@
     "xo": "0.18.2"
   },
   "dependencies": {
-    "args": "3.0.4",
+    "args": "3.0.7",
     "basic-auth": "2.0.0",
-    "bluebird": "3.5.0",
+    "bluebird": "3.5.1",
     "boxen": "1.2.1",
     "chalk": "2.1.0",
     "clipboardy": "1.1.4",
@@ -69,6 +69,7 @@
     "opn": "5.1.0",
     "path-type": "3.0.0",
     "send": "0.16.1",
+    "openssl-self-signed-certificate": "1.1.6",
     "update-notifier": "2.2.0"
   }
 }
