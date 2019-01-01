@@ -1,23 +1,15 @@
-# sharing
+# Simple http serve
 
-Ever wanted to share a certain directory on your network by running just a command? Then this module is exactly what you're looking for: It provides a neat interface for listing the directory's contents and switching into sub folders.
+## 安装方法
 
-In addition, it's also awesome when it comes to serving static sites. If a directory contains an `index.html`, `serve` will automatically render it instead of serving directory contents, and will serve any `.html` file as a rendered page instead of file's content as plaintext.
-
-![screenshot](https://raw.githubusercontent.com/zeit/art/4bafffc43b38f3b796eb2f9071292d13d129a7d8/serve/example.png)
+```bash
+npm install -g @puge/http
+```
 
 ## 使用方法
 
-Install it (needs at least Node LTS):
-
 ```bash
-npm install -g sharing
-```
-
-And run this command in your terminal:
-
-```bash
-serve [options] <path>
+http [options] <path>
 ```
 
 ### Options
@@ -72,7 +64,3 @@ After that, you can use the `serve` command everywhere. [Here](https://github.co
 ## Credits
 
 This project used to be called "list" and "micro-list". But thanks to [TJ Holowaychuk](https://github.com/tj) handing us the new name, it's now called "serve" (which is much more definite).
-
-## Author
-
-Leo Lamprecht ([@notquiteleo](https://twitter.com/notquiteleo)) - [▲ZEIT](https://zeit.co)

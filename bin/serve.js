@@ -13,7 +13,6 @@ const { red } = require('chalk')
 const nodeVersion = require('node-version')
 
 // Utilities
-const pkg = require('../package')
 const listening = require('../lib/listening')
 const serverHandler = require('../lib/server')
 const { options, minimist } = require('../lib/options')
@@ -60,6 +59,7 @@ const handler = coroutine(function*(req, res) {
   yield serverHandler(req, res, flags, current, ignoredFiles)
 })
 
+// 判断是否启用Gzip压缩
 const server = flags.unzipped ? micro(handler) : micro(compress(handler))
 let port = flags.port
 
